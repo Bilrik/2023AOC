@@ -18,7 +18,7 @@ const (
 )
 
 func parseInput() {
-	input := utils.ReadInput(day)
+	input := utils.ReadInputLines(day)
 
 	for i, line := range input {
 		line = line[strings.Index(line, ":")+2:]

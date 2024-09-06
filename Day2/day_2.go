@@ -33,7 +33,7 @@ func Day2() {
 
 func part1() int {
 	total := 0
-	for gameID, line := range utils.ReadInput(day) {
+	for gameID, line := range utils.ReadInputLines(day) {
 		line = line[strings.Index(line, ":")+1:]
 		line = strings.TrimSpace(line)
 		for _, show := range strings.Split(line, ";") {
@@ -54,7 +54,7 @@ func part1() int {
 
 func part2() int {
 	power := 0
-	for _, line := range utils.ReadInput(day) {
+	for _, line := range utils.ReadInputLines(day) {
 		seen := map[string]int{
 			"red":   0,
 			"green": 0,

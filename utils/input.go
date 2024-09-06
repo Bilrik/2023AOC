@@ -35,7 +35,7 @@ func getinput() (string, error) {
 	return *resp, nil
 }
 
-func ReadInput(folder string) []string {
+func ReadInputLines(folder string) []string {
 	file, err := os.Open(folder + "/input.txt")
 	if err != nil {
 		fmt.Println(err)

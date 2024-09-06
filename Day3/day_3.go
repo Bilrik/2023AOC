@@ -62,7 +62,7 @@ func part2() int {
 }
 
 func parseInput() {
-	input := utils.ReadInput(day)
+	input := utils.ReadInputLines(day)
 
 	for _, line := range input {
 		fmt.Println(line)
